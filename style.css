@@ -1,0 +1,81 @@
+/* Reset */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Page basics */
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #e4ecf5);
+  color: #333;
+  text-align: center;
+  padding: 40px;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+.subtitle {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* App grid */
+.apps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+/* App card */
+.app-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.app-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+.app-card h2 {
+  margin-bottom: 10px;
+}
+.app-card p {
+  font-size: 0.95em;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Button */
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+.button:hover {
+  background: #0056b3;
+}
+
+/* Footer */
+footer {
+  font-size: 0.85em;
+  color: #777;
+}
